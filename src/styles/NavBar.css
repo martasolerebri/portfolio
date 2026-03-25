@@ -21,8 +21,12 @@
     .navbar-light .navbar-brand  {
         display: none;
     }
-  
-    .navbar-light .navbar-nav.me-auto .nav-link {
-        display: none;
-      }
+    
+    .navbar-collapse {
+      background-color: var(--navy);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    }
   }

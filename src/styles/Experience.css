@@ -108,6 +108,7 @@
   #experience {
     min-height: unset;
     align-items: flex-start;
+    padding: 0 5vw;
   }
   
   #experience .section-header {

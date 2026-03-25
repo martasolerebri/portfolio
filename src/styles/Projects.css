@@ -111,11 +111,12 @@
 @media only screen and (max-width: 600px) {
   #projects {
     min-height: 90vh;
-    padding-left: unset;
-    padding-right: unset;
+    padding: 0 5vw;
   }
   .projects-card {
-    height: 420px;
+    height: auto;
+    min-height: 420px;
+    padding: 24px;
   }
   .card-body {
     padding: 20px;

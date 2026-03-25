@@ -73,8 +73,7 @@
 @media only screen and (max-width: 600px) {
   #about {
     min-height: 90vh;
-    padding-left: unset;
-    padding-right: unset;
+    padding: 0 5vw;
   }
 
   .about-description {
