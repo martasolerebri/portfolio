@@ -124,6 +124,10 @@
     margin-bottom: 20px;
   }
 
+  .MuiTabs-indicator {
+    display: none !important;
+  }
+
   .joblist-job-title, .joblist-job-company {
     font-size: 20px;
   }
