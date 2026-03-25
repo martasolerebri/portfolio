@@ -41,7 +41,7 @@
 }
 
 .MuiTabs-indicator {
-  background-color: var(--green-bright) !important;
+  display: none !important;
 }
 
 .joblist-tabs {
@@ -124,9 +124,6 @@
     margin-bottom: 20px;
   }
 
-  .MuiTabs-indicator {
-    display: none !important;
-  }
 
   .joblist-job-title, .joblist-job-company {
     font-size: 20px;
