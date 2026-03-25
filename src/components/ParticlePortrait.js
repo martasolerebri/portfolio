@@ -39,7 +39,6 @@ const ParticlePortrait = () => {
     let animationId;
 
     const img = new Image();
-    img.crossOrigin = "Anonymous";
     img.src = process.env.PUBLIC_URL + "/profile.png";
 
     img.onload = () => {
