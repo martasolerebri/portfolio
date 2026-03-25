@@ -115,7 +115,7 @@ const JobList = () => {
         className={`joblist-tabs ${classes.tabs}`}
       >
         {Object.keys(experienceItems).map((key, i) => (
-          <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i, isHorizontal)} key={key} />
+          <Tab label={key} {...a11yProps(i, isHorizontal)} key={key} />
         ))}
       </Tabs>
       {Object.keys(experienceItems).map((key, i) => (
