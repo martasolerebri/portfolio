@@ -1,0 +1,129 @@
+#experience {
+  min-height: 90vh;
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#experience .section-header {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+#experience .section-header::after {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+#vertical-tabpanel {
+  margin-top: -28px;
+  padding-left: 25px;
+}
+
+.MuiTab-wrapper {
+  font-size: 16px;
+  text-align: left;
+  align-items: flex-start !important;
+  font-family: "NTR", sans-serif;
+  text-transform: none; /* Make tab names look natural */
+}
+
+.MuiButtonBase-root {
+  outline: none !important;
+  color: var(--slate) !important;
+}
+
+.MuiButtonBase-root.Mui-selected {
+  color: var(--green-bright) !important;
+  background-color: transparent !important;
+}
+
+.PrivateTabIndicator-colorSecondary-5, .MuiTabs-indicator {
+  background-color: var(--green-bright) !important;
+}
+.jss5 {
+  background-color: var(--green-bright) !important;
+}
+
+.makeStyles-tabs-2 {
+  border-right: 1px solid var(--lightest-navy) !important;
+}
+
+#experience .MuiTab-root {
+  padding: 10px 20px;
+}
+
+.MuiButtonBase-root:focus {
+  color: var(--green-bright) !important;
+}
+
+.joblist-job-title {
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--lightest-slate);
+}
+
+.joblist-job-company {
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  color: var(--green-bright);
+  font-weight: bold;
+}
+
+.joblist-duration {
+  font-family: "NTR", sans-serif;
+  font-size: 16px;
+  color: var(--slate);
+  margin-bottom: 20px;
+}
+
+.job-description {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+}
+
+.job-description li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: var(--slate);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.job-description li::before {
+  content: "▹    ";
+  color: var(--green-bright);
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #experience {
+    min-height: unset;
+    align-items: flex-start;
+  }
+  
+  #experience .section-header {
+    flex-direction: row;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
+  .joblist-job-title, .joblist-job-company {
+    font-size: 20px;
+  }
+  .job-description li {
+    font-size: 16px;
+  }
+}

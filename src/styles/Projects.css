@@ -1,0 +1,126 @@
+#projects {
+  margin: auto;
+  max-width: 1000px;
+  min-height: 90vh;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25vh;
+  padding-bottom: 40vh;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.projects-card {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  height: 520px;
+  padding: 40px;
+  background-color: var(--light-navy);
+  border-radius: 16px;
+  box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.folder-icon {
+  color: var(--green-bright);
+}
+
+.card-title {
+  font-family: "NTR", sans-serif;
+  color: var(--lightest-slate);
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-desc {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.card-tech {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.card-tools-container {
+  border-top: 1px solid var(--lightest-navy);
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card-tools-label {
+  font-family: "NTR", sans-serif;
+  color: var(--slate);
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.card-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-tool-badge {
+  font-family: "NTR", sans-serif;
+  background-color: var(--green-tint);
+  color: var(--green-bright);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.open-icon, .github-icon {
+  margin-left: 15px;
+}
+
+.github-icon:hover, .open-icon:hover {
+  color: var(--green-bright);
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    min-height: 90vh;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .projects-card {
+    height: 420px;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+}
