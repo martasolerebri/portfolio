@@ -22,7 +22,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#projects">Projects</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="/assets/Marta CV.pdf" target="_blank">
+              <Nav.Link href={process.env.PUBLIC_URL + "/assets/Marta CV.pdf"} target="_blank">
                 <DescriptionIcon style={{ fontSize: 20 }}></DescriptionIcon>
               </Nav.Link>
               <Nav.Link href="https://github.com/martasolerebri" target="_blank">
