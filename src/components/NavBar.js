@@ -10,7 +10,7 @@ import "../styles/NavBar.css";
 class NavBar extends React.Component {
   render() {
     return (
-      <Navbar fixed="top" className="bg-body-tertiary">
+      <Navbar fixed="top" expand="md" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#">Marta Soler Ebri</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

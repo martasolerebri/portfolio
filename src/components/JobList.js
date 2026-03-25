@@ -7,10 +7,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import FadeInSection from "./FadeInSection";
 
-const isHorizontal = window.innerWidth < 600;
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index, isHorizontal, ...other } = props;
 
   if (isHorizontal) {
     return (
@@ -52,7 +52,7 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
+function a11yProps(index, isHorizontal) {
   if (isHorizontal) {
     return {
       id: `full-width-tab-${index}`,
@@ -80,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
 const JobList = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const isHorizontal = useMediaQuery("(max-width:600px)");
 
   const experienceItems = {
     "SDG Group": {
@@ -114,11 +115,11 @@ const JobList = () => {
         className={`joblist-tabs ${classes.tabs}`}
       >
         {Object.keys(experienceItems).map((key, i) => (
-          <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} key={key} />
+          <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i, isHorizontal)} key={key} />
         ))}
       </Tabs>
       {Object.keys(experienceItems).map((key, i) => (
-        <TabPanel value={value} index={i} key={key}>
+        <TabPanel value={value} index={i} key={key} isHorizontal={isHorizontal}>
           <span className="joblist-job-title">
             {experienceItems[key]["jobTitle"] + " "}
           </span>

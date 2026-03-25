@@ -113,9 +113,15 @@
   }
 
   .joblist-root {
-    height: unset !important;
-    width: unset;
-    flex-direction: column;
+    height: auto !important;
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  
+  .joblist-tabs {
+    border-right: none !important;
+    border-bottom: 1px solid var(--lightest-navy) !important;
+    margin-bottom: 20px;
   }
 
   .joblist-job-title, .joblist-job-company {
