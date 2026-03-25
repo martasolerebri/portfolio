@@ -40,14 +40,11 @@
   background-color: transparent !important;
 }
 
-.PrivateTabIndicator-colorSecondary-5, .MuiTabs-indicator {
-  background-color: var(--green-bright) !important;
-}
-.jss5 {
+.MuiTabs-indicator {
   background-color: var(--green-bright) !important;
 }
 
-.makeStyles-tabs-2 {
+.joblist-tabs {
   border-right: 1px solid var(--lightest-navy) !important;
 }
 
@@ -115,7 +112,7 @@
     flex-direction: row;
   }
 
-  .makeStyles-root-1 {
+  .joblist-root {
     height: unset !important;
     width: unset;
     flex-direction: column;

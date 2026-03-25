@@ -20,7 +20,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  height: 520px;
+  height: auto;
+  min-height: 520px;
   padding: 40px;
   background-color: var(--light-navy);
   border-radius: 16px;

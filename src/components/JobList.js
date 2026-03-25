@@ -105,13 +105,13 @@ const JobList = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={`joblist-root ${classes.root}`}>
       <Tabs
         orientation={!isHorizontal ? "vertical" : "horizontal"}
         variant={isHorizontal ? "fullWidth" : "scrollable"}
         value={value}
         onChange={handleChange}
-        className={classes.tabs}
+        className={`joblist-tabs ${classes.tabs}`}
       >
         {Object.keys(experienceItems).map((key, i) => (
           <Tab label={isHorizontal ? `0${i}.` : key} {...a11yProps(i)} key={key} />
