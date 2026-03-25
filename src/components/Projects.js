@@ -19,8 +19,8 @@ class Projects extends React.Component {
         desc:
           "A conversational AI agent connected to real transaction data. Ask questions like \"Where did my money go this month?\" and get precise answers — Sentinel picks the right tool, queries the database, and shows you exactly what it did.",
         techStack: "Python, LangGraph, FastAPI, SQLite, HTML/JS, Docker, Git",
-        link: "https://github.com/martasolerebri",
-        open: "https://github.com/martasolerebri/sentinel",
+        link: "https://github.com/martasolerebri/sentinel",
+        open: "https://martasolerebri.github.io/sentinel/",
         icon: "chat",
         toolsLabel: "5 AGENT TOOLS",
         tools: ["analyze_spending", "category_trend", "top_expenses", "savings_goal", "financial_health"]
