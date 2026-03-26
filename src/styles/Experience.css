@@ -84,12 +84,16 @@
   max-width: 600px;
 }
 
+.MuiTypography-root {
+  font-family: "NTR", sans-serif !important;
+}
+
 .job-description li {
   position: relative;
   padding-left: 20px;
   padding-bottom: 10px;
   font-size: 18px;
-  font-family: "NTR", sans-serif;
+  font-family: "NTR", sans-serif !important;
   color: var(--slate);
   text-align: justify;
   line-height: 1.5;
